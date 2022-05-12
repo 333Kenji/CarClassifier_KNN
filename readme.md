@@ -1,15 +1,19 @@
 ??? Banner
 
 
-# KNN Car Flassiier
+# KNN Car Classifier
 
 This project is an exploration of the KNN classfier including data processing and analysis.
 
-## Authors
+#
+## Author
 
-- Kenji Alford [GIT](https://www.github.com/333kenji)
+- Kenji Alford [Git](https://www.github.com/333kenji)
 
-??? Embiggen (or not)
+Notebook(s) for this project can be found [here](https://github.com/333Kenji/CarClassifier_KNN/tree/main/Notebooks).
+
+---
+
 <!-- TABLE OF CONTENTS -->
 <details>
     
@@ -39,40 +43,56 @@ This project is an exploration of the KNN classfier including data processing an
 
 
 ---
-??? Linky
+
+![alt text](https://github.com/333Kenji/StudentSuccess-LinReg/blob/main/Images/banner.jpg "Final")
 The notebook(s) for this project can be found here.
 
 
-## Motivations
+# Motivations
 
 As part of a series of basic projects, I'm using this project to build intuition in the process of applying the KNN algorithm as a classifier.
 
-My target for this project will be the datasets 'class' feature which denotes vehicle quality. The problem then will be to build a classifier that can discern a car's quality by looking at its features.
-The Solution
-- Since the dataset is quite clean, I will simply have to encode and scale the data before applying the algorithm which will then discern the typical features belonging to each class.
-- Evaluation Metrics.
-    - Using the elbow method.
-    
-Goals: Project Objectives
+## Real World Problem
+It'd be great to be able to look at a large number of vehicles and find a particular class based on its features.
+
+## ML Problem
+The problem will be to build a model capable of discerning the highest quality vehicles from the test set.
+
+### Solution
+- After examing and preparing the data I will build a pipeline that'll encode the independent feature values into ordinal categorical features. I'll then use this pipeline for hyperperameter tuning, training, and testing/evaluating the optimal KNN model.
+
+### Target
+The target for this project will the highest class of car in the dataset, classed as the 'vhigh' value.
+
+### Goals: Project Objectives
 - A classification model that has an optimal number of k and an accuracy of at least 95%
 
+### Evaluation Metrics:
+* Accuracy: .97
+* Precision: 1
+* Recall: .41
+* F1 Scores: .58
+
+Also,
+    - elbow method
+![alt text](https://github.com/333Kenji/CarClassifier_KNN/tree/main/Images/elbow.jpeg "Elbow Method")
+
+### Optimal Hyperperamters:
+k = 5
 
 
 ---
 ## Methodologies
-### Methods Employed
-- Feature Analisys
-- Machine Learning
-    - Choosing the 'class' feature as my target this becomes a multilabel classification probem because that feature has four possible ordinal values: 'unacc' (unacceptable), 'acc' (acceptable), 'good', and 'vgood' (very good).
-    By using the KNN algorithm I'm able to leverage it's grouping ability to classify across more than to labels as would be the cade with a simple application of logistic regression.
-- Data Visualization
-    - Using Seaborn for my primary analysis and I also use Pandas to view the data as it moves through each preprocessing and transformation phase wih evaluaion (elbow) produced via a simple matplotlib plot.
-- Predictive Modeling
-- etc.
+- Feature Analysis and comparison with Pandas, Numpy, and matplotlib/Seaborn.
+- Encoding string-type ordinal categorial variable values as numeric values using the scikit-learn encoding module.
+- Hyperperameter Tuning and Model Selection using the scikit-learn implementation of KNN Classifier algorithm within a pipeline built using the scikit-learn pipeline module.
+- Training and Testing/Evalutaing model using the scikit-learn metrics modeul and a custom score/confusion matrix vsualization
+
 ## Libraries and Technologies
 - Python
 - Numpy, Pandas
 - Scikit-learn
+  * 
 - Jupyter, VSCde
 
 ---
@@ -133,3 +153,12 @@ Real World Applications
 - [ ] Multi-language Support
     - [ ] Chinese
     - [ ] Spanish
+
+
+
+    - Choosing the 'class' feature as my target this becomes a multilabel classification probem because that feature has four possible ordinal values: 'unacc' (unacceptable), 'acc' (acceptable), 'good', and 'vgood' (very good).
+    By using the KNN algorithm I'm able to leverage it's grouping ability to classify across more than to labels as would be the cade with a simple application of logistic regression.
+- Data Visualization
+    - Using Seaborn for my primary analysis and I also use Pandas to view the data as it moves through each preprocessing and transformation phase wih evaluaion (elbow) produced via a simple matplotlib plot.
+- Predictive Modeling
+- etc.
