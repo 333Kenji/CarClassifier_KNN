@@ -44,7 +44,7 @@ Notebook(s) for this project can be found [here](https://github.com/333Kenji/Car
 
 ---
 
-![alt text](https://github.com/333Kenji/StudentSuccess-LinReg/blob/main/Images/banner.jpg "Final")
+![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/banner.jpg "Final")
 The notebook(s) for this project can be found here.
 
 
@@ -58,7 +58,7 @@ It'd be great to be able to look at a large number of vehicles and find a partic
 ## ML Problem
 The problem will be to build a model capable of discerning the highest quality vehicles from the test set.
 
-### Solution
+## Solution
 - After examing and preparing the data I will build a pipeline that'll encode the independent feature values into ordinal categorical features. I'll then use this pipeline for hyperperameter tuning, training, and testing/evaluating the optimal KNN model.
 
 ### Target
@@ -82,7 +82,7 @@ k = 5
 
 
 ---
-## Methodologies
+# Methodologies
 - Feature Analysis and comparison with Pandas, Numpy, SciPy stats module, and matplotlib/Seaborn.
 - Encoding string-type ordinal categorial variable values as numeric values using the scikit-learn encoding module.
 - Hyperperameter Tuning and Model Selection using the scikit-learn implementation of KNN Classifier algorithm within a pipeline built using the scikit-learn pipeline module.
