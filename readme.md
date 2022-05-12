@@ -48,17 +48,17 @@ Notebook(s) for this project can be found [here](https://github.com/333Kenji/Car
 The notebook(s) for this project can be found here.
 
 
-# Motivations
+## Motivations
 
 As part of a series of basic projects, I'm using this project to build intuition in the process of applying the KNN algorithm as a classifier.
 
-## Real World Problem
+### Real World Problem
 It'd be great to be able to look at a large number of vehicles and find a particular class based on its features.
 
-## ML Problem
+### ML Problem
 The problem will be to build a model capable of discerning the highest quality vehicles from the test set.
 
-## Solution
+### Solution
 - After examing and preparing the data I will build a pipeline that'll encode the independent feature values into ordinal categorical features. I'll then use this pipeline for hyperperameter tuning, training, and testing/evaluating the optimal KNN model.
 
 #### Target
