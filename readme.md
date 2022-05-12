@@ -44,7 +44,7 @@ Notebook(s) for this project can be found [here](https://github.com/333Kenji/Car
 
 ---
 
-![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/banner.jpg "Final")
+![alt text](https://github.com/333Kenji/CarClassifier_KNNCarClassifier_KNN/blob/main/Images/banner.jpg "Final")
 The notebook(s) for this project can be found here.
 
 
@@ -61,7 +61,7 @@ The problem will be to build a model capable of discerning the highest quality v
 ## Solution
 - After examing and preparing the data I will build a pipeline that'll encode the independent feature values into ordinal categorical features. I'll then use this pipeline for hyperperameter tuning, training, and testing/evaluating the optimal KNN model.
 
-### Target
+#### Target
 The target for this project will the highest class of car in the dataset, classed as the 'vhigh' value.
 
 ### Goals: Project Objectives
