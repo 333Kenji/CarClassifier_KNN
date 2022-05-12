@@ -44,8 +44,6 @@ Notebook(s) for this project can be found [here](https://github.com/333Kenji/Car
 
 ---
 
-![alt text](https://github.com/333Kenji/CarClassifier_KNNCarClassifier_KNN/blob/main/Images/banner.jpg "Final")
-The notebook(s) for this project can be found here.
 
 
 ## Motivations
@@ -64,7 +62,7 @@ The problem will be to build a model capable of discerning the highest quality v
 #### Target
 The target for this project will the highest class of car in the dataset, classed as the 'vhigh' value.
 
-#### Goals: Project Objectives
+#### Project Objective(s):
 - A classification model that has an optimal number of k and an accuracy of at least 95%
 
 #### Evaluation Metrics:
@@ -74,7 +72,7 @@ The target for this project will the highest class of car in the dataset, classe
 * F1 Scores: .58
 
 Also,
-    - elbow method
+    - elbow method*<br />*
 ![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/elbow.jpg "Elbow Method")
 
 #### Optimal Hyperperamters:
@@ -105,7 +103,7 @@ k = 5
 # Project Description
  ## The Data
  
-The data for this project comes from Kaggle. Although I wrangle raw data in other projects I wanted to focus on the rest of preprocessing via pipelining. The the data features car evaluation metrics for classification, such as number of doors, safety, and maintenance cost - each bearing a range of 3-5 categorically ordered values like 'unacc', 'acc', 'vgood', and 'good' for the car_class feature.
+The data for this project comes from Kaggle. Although I wrangle raw data in other projects I wanted to focus on the rest of preprocessing via pipelining. The the data features car evaluation metrics for classification, such as number of doors, safety, and maintenance cost - each bearing a range of 3-5 categorically ordered values like 'unacc', 'acc', 'vgood', and 'good' for the car_class feature.*<br />*
 ![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/rawdata.jpg "Final")
 
 
