@@ -64,10 +64,10 @@ The problem will be to build a model capable of discerning the highest quality v
 #### Target
 The target for this project will the highest class of car in the dataset, classed as the 'vhigh' value.
 
-### Goals: Project Objectives
+#### Goals: Project Objectives
 - A classification model that has an optimal number of k and an accuracy of at least 95%
 
-### Evaluation Metrics:
+#### Evaluation Metrics:
 * Accuracy: .97
 * Precision: 1
 * Recall: .41
@@ -77,7 +77,7 @@ Also,
     - elbow method
 ![alt text](https://github.com/333Kenji/CarClassifier_KNN/tree/main/Images/elbow.jpeg "Elbow Method")
 
-### Optimal Hyperperamters:
+#### Optimal Hyperperamters:
 k = 5
 
 
