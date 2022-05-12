@@ -83,37 +83,51 @@ k = 5
 
 ---
 ## Methodologies
-- Feature Analysis and comparison with Pandas, Numpy, and matplotlib/Seaborn.
+- Feature Analysis and comparison with Pandas, Numpy, SciPy stats module, and matplotlib/Seaborn.
 - Encoding string-type ordinal categorial variable values as numeric values using the scikit-learn encoding module.
 - Hyperperameter Tuning and Model Selection using the scikit-learn implementation of KNN Classifier algorithm within a pipeline built using the scikit-learn pipeline module.
-- Training and Testing/Evalutaing model using the scikit-learn metrics modeul and a custom score/confusion matrix vsualization
+- Training and Testing/Evalution of model using the scikit-learn metrics module and a specialized score/confusion matrix visualization.
 
 ## Libraries and Technologies
 - Python
 - Numpy, Pandas
-- Scikit-learn
-  * 
-- Jupyter, VSCde
+- Scikit-learn modules
+  * neighbors
+  * metrics
+  * preprocessing
+  * pipeline/compose
+  * model_selection
+- SciPy Stats
+- Seaborn/Matplotlib
+- Jupyter/VSCde
 
 ---
-## Project Description
-### Technical Aspect
-This project is broken ito two parts.
-1. stages of what you’re doing
-2. can be broken down
-    1. into
-    2. a tree
- ### Experimental Design
- - target
- - the control/test split
- - the validation set
- - ML algorithm stack
- ### The Data
+# Project Description
+ ## The Data
+ 
+![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/rawdata.jpg "Final")
+The data for this project comes from Kaggle. Although I wrangle raw data in other projects I wanted to focus on the rest of preprocessing via pipelining. The the data features car evaluation metrics for classification, such as number of doors, safety, and maintenance cost - each bearing a range of 3-5 categorically ordered values like 'unacc', 'acc', 'vgood', and 'good' for the car_class feature.
 
-Description of Data Acquisition
-Date of collection
-Description of each data source
-- Source
+### Data Dictionary
+* price    overall price
+* buying   buying price
+* maint    price of the maintenance
+* doors    number of doors
+* persons  capacity in terms of persons to carry
+* lug_boot the size of luggage boot
+* safety   estimated safety of the car The dataset is simple with some minor variation amongst feature variations
+
+
+
+### Collection Date
+- 4/5/2022
+
+### Data Source
+* The UC Irvine data archive is a repository of publicly-accessible data sets for research.
+
+https://archive.ics.uci.edu/ml/datasets/Car+Evaluation
+
+
 How Sources May Be Related
 Variables Directory
 - column headings
