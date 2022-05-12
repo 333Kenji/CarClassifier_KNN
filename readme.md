@@ -170,7 +170,7 @@ And finally, confusion matrix.*<br />*
 ![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/matrixscores.jpg "Final")
 
 
-### Project development notes
+### Project Development Notes
 
   - Choosing the 'class' feature as my target this becomes a multilabel classification probem because that feature has four possible ordinal values: 'unacc' (unacceptable), 'acc' (acceptable), 'good', and 'vgood' (very good).
   - By using the KNN algorithm I'm able to leverage it's grouping ability to classify across more than to labels as would be the cade with a simple application of logistic regression.
