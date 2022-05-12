@@ -105,8 +105,9 @@ k = 5
 # Project Description
  ## The Data
  
-![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/rawdata.jpg "Final")
 The data for this project comes from Kaggle. Although I wrangle raw data in other projects I wanted to focus on the rest of preprocessing via pipelining. The the data features car evaluation metrics for classification, such as number of doors, safety, and maintenance cost - each bearing a range of 3-5 categorically ordered values like 'unacc', 'acc', 'vgood', and 'good' for the car_class feature.
+![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/rawdata.jpg "Final")
+
 
 ### Data Dictionary
 * price    overall price
@@ -126,6 +127,25 @@ The data for this project comes from Kaggle. Although I wrangle raw data in othe
 * The UC Irvine data archive is a repository of publicly-accessible data sets for research.
 
 https://archive.ics.uci.edu/ml/datasets/Car+Evaluation
+
+
+## Preprocessing
+The 1728 row of data have 7 features. Since this is a classification problem I'll be selecting one to be the target, leaving me with 6 features to work with.
+
+This data is extremely clean, which is great for a simple project. Although the mostly even splits throughout the data are initially concerning, there doesn't seem to be any significant overlap, at this time.
+
+Since I'd like this to remain a simple KNN classifier project I will need to generate a new column for the specific value I'm training the model to find.
+
+Since all my independent features are ordinal categorical variables I won't need to scale the data. Despite this meaning I *could* seperate out the target and create the train and test splits I'm going to keep to good practice and handle this now.
+
+Since I'm using 'car_class' as the model's target I'll need to deal with its four labels, unacc, acc, good, and vgood by  converting them to numeric values and selecting one for each test I'd like to run.
+
+What the Chi2 contingency scores look like prior to preprocessing and selecting a specific class as the target.
+
+![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/chibefore.jpg "Final")
+
+And after. Note the closeness of car_class and target.
+![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/chiafter.jpg "Final")
 
 
 How Sources May Be Related
