@@ -140,11 +140,10 @@ Since all my independent features are ordinal categorical variables I won't need
 
 Since I'm using 'car_class' as the model's target I'll need to deal with its four labels, unacc, acc, good, and vgood by  converting them to numeric values and selecting one for each test I'd like to run.
 
-What the Chi2 contingency scores look like prior to preprocessing and selecting a specific class as the target.
-
+What the Chi2 contingency scores look like prior to preprocessing and selecting a specific class as the target.*<br />*
 ![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/chibefore.jpg "Final")
 
-And after. Note the closeness of car_class and target.
+And after. Note the closeness of car_class and target.*<br />*
 ![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/chiafter.jpg "Final")
 
 
