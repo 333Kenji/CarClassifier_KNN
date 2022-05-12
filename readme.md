@@ -75,7 +75,7 @@ The target for this project will the highest class of car in the dataset, classe
 
 Also,
     - elbow method
-![alt text](https://github.com/333Kenji/CarClassifier_KNN/tree/main/Images/elbow.jpeg "Elbow Method")
+![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/elbow.jpg "Elbow Method")
 
 #### Optimal Hyperperamters:
 k = 5
