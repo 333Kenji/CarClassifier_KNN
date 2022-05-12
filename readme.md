@@ -83,7 +83,7 @@ k = 5
 
 ---
 # Methodologies
-- Feature Analysis and comparison with Pandas, Numpy, SciPy stats module, and matplotlib/Seaborn.
+- Feature Analysis and Comparison with Pandas, Numpy, SciPy stats module, and matplotlib/Seaborn.
 - Encoding string-type ordinal categorial variable values as numeric values using the scikit-learn encoding module.
 - Hyperperameter Tuning and Model Selection using the scikit-learn implementation of KNN Classifier algorithm within a pipeline built using the scikit-learn pipeline module.
 - Training and Testing/Evalution of model using the scikit-learn metrics module and a specialized score/confusion matrix visualization.
@@ -133,7 +133,7 @@ https://archive.ics.uci.edu/ml/datasets/Car+Evaluation
 The 1728 row of data have 7 features. Since this is a classification problem I'll be selecting one to be the target, leaving me with 6 features to work with.
 
 This data is extremely clean, which is great for a simple project. Although the mostly even splits throughout the data are initially concerning, there doesn't seem to be any significant overlap, at this time.
-
+## Feature Analysis and Comparison
 Since I'd like this to remain a simple KNN classifier project I will need to generate a new column for the specific value I'm training the model to find.
 
 Since all my independent features are ordinal categorical variables I won't need to scale the data. Despite this meaning I *could* seperate out the target and create the train and test splits I'm going to keep to good practice and handle this now.
@@ -146,46 +146,29 @@ What the Chi2 contingency scores look like prior to preprocessing and selecting 
 And after. Note the closeness of car_class and target.*<br />*
 ![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/chiafter.jpg "Final")
 
+Values for features remaining in X after encoding.*<br />*
+![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/xafterprocessing.jpg "Final")
 
-How Sources May Be Related
-Variables Directory
-- column headings
-- types
-- number of variables
-- units of measurement
-- Definition of missing data
-Directory Tree
-Description of Methods of Data Processing
-- Wrangling
-- Transformation
-- Encoding
-- Scaling
+## Hyperperameter Tuning and Model Selection
+Having built successfully built a pipline that encodes text values into numeric while reserving order I can now add one last pipleine layer which will also include the classifier. Using cross validation and the elbow method of visualy analyzing the optimal train and test scores I'll select the final k.
 
----
-## Summary
-### Noteworthy Findings w/Graphics
-- this
-- that
-- and another thing
+Using the elbow method.
+![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/elbow.jpg "Final")
 
+Looks like a k of 5 is the best.*<br />*
+![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/kscores.jpg "Final")
 
-Information About Model
-Model Evaluation
-    - [Model Card](https://arxiv.org/pdf/1810.03993.pdf)
-Predictions
-Real World Applications
+## Model Evalution
+The model with a  or 5 scores .97*<br />*
 
----
-<!-- ROADMAP -->
-## Roadmap
+![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/predictionsandprobs.jpg "Final")
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+Some of these probabilities are interesting (.8 vs .2 and .6 vs .4)*<br />*
+This might bear further investigation as to whether these probabilities correspond to additional populations within the data.
+
+And finally, confusion matrix.*<br />*
+![alt text](https://github.com/333Kenji/CarClassifier_KNN/blob/main/Images/matrixscores.jpg "Final")
+
 
 
 
